@@ -1,3 +1,5 @@
+#Edit
+
 import numpy as np
 import pandas as pd
 from flask import Flask, request, render_template
@@ -39,7 +41,8 @@ def predict():
       
     return render_template('index.html', prediction_text='Patient will be {}'.format(res_val))
 #  input_features = [int(x) for x in request.form.values()]
-#  features_value = [np.array(input_features)]#
+#  features_value = [np.array(input_features)]
+#
 #  features_name = ['AGE_DX', 'GRADE', 'NO_SURG', 'RADIATN', 'FIRSTPRM']
 #
 #  df = pd.DataFrame(features_value, columns=features_name)
